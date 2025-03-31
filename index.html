@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain & Homomorphic Encryption in Healthcare</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="cybr-container">
+        <!-- Animated background -->
+        <div class="cyber-grid"></div>
+        
+        <!-- Navigation -->
+        <nav class="cybr-nav">
+            <div class="logo">SECURE<span>HEALTH</span></div>
+            <ul>
+                <li><a href="#intro">Home</a></li>
+                <li><a href="#blockchain">Blockchain</a></li>
+                <li><a href="#encryption">Encryption</a></li>
+                <li><a href="#combined">Combined</a></li>
+                <li><a href="#applications">Applications</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="intro" class="hero-section" style="padding-top: 100px;">
+            <div class="glitch-container">
+                <h1 class="glitch" data-text="Securing Healthcare Data">Securing Healthcare Data</h1>
+            </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="scenario-box">
+                        <h3>The Challenge</h3>
+                        <p>Imagine several hospitals wanting to collaborate on research but unable to share sensitive patient data due to privacy regulations. How can they analyze combined datasets without revealing individual records?</p>
+                    </div>
+                    
+                    <p>Healthcare data requires both security and utility. Blockchain technology provides immutable, transparent record-keeping, while homomorphic encryption enables computation on encrypted data without exposing sensitive information.</p>
+                    
+                    <div class="purpose-statement">
+                        <p><span class="highlight">Author's Purpose:</span> This educational resource by Bella Bao, Yale University master student, aims to bridge the knowledge gap surrounding blockchain and homomorphic encryption technologies, making these complex concepts accessible to healthcare professionals and technologists alike.</p>
+                    </div>
+                    
+                    <div class="hero-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Enhanced patient privacy</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-cubes"></i>
+                            <span>Immutable medical records</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>Secure data sharing</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Privacy-preserving analytics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Blockchain Section -->
+        <section id="blockchain" class="content-section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-link"></i></div>
+                <h2>Blockchain Technology</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content-columns">
+                <div class="text-column">
+                    <h3>What is Blockchain?</h3>
+                    <p>Blockchain is a distributed ledger technology that maintains a continuously growing list of records, called blocks, which are linked and secured using cryptography. Each block contains a timestamp and transaction data that is inherently resistant to modification.</p>
+                    
+                    <h3>Why Use Blockchain?</h3>
+                    <ul class="feature-list">
+                        <li><span class="highlight">No Single Point of Failure</span>: Distributed across many computers, preventing system-wide failures</li>
+                        <li><span class="highlight">Tamper Resistance</span>: Changes require consensus, making unauthorized alterations nearly impossible</li>
+                        <li><span class="highlight">Auditability</span>: Complete transaction history provides accountability and traceability</li>
+                        <li><span class="highlight">Disintermediation</span>: Reduces reliance on central authorities and third-party validators</li>
+                    </ul>
+                    
+                    <h3>Key Limitations</h3>
+                    <div class="limitations-box">
+                        <p><span class="highlight-warning">Transparency vs. Privacy:</span> While beneficial for auditability, blockchain's transparency means all transactions are visible to all participants—problematic for sensitive healthcare data.</p>
+                        <p><span class="highlight-warning">Solution:</span> Homomorphic encryption adds a privacy layer, enabling secure computation on encrypted data while maintaining blockchain's integrity benefits.</p>
+                    </div>
+                </div>
+                <div class="visual-column">
+                    <div class="blockchain-visual">
+                        <div class="block" data-block="1">
+                            <div class="block-header">GENESIS BLOCK</div>
+                            <div class="block-hash">0x7f83b...</div>
+                        </div>
+                        <div class="chain-link"></div>
+                        <div class="block" data-block="2">
+                            <div class="block-header">BLOCK #2</div>
+                            <div class="block-hash">0x3a56c...</div>
+                        </div>
+                        <div class="chain-link"></div>
+                        <div class="block" data-block="3">
+                            <div class="block-header">BLOCK #3</div>
+                            <div class="block-hash">0x9d4f2...</div>
+                            <div class="chain-grow"></div>
+                            <div class="hash-calculation">Calculating hash: 0x4e2f8...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Homomorphic Encryption Section -->
+        <section id="encryption" class="content-section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-shield-alt"></i></div>
+                <h2>Homomorphic Encryption</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="content-columns reverse">
+                <div class="visual-column">
+                    <div class="simple-encryption-visual">
+                        <div class="he-example">
+                            <div class="he-operation">
+                                <div class="he-item original">23</div>
+                                <div class="he-plus">+</div>
+                                <div class="he-item original">45</div>
+                                <div class="he-equals">=</div>
+                                <div class="he-item original">68</div>
+                            </div>
+                            <div class="he-arrow"><i class="fas fa-long-arrow-alt-down"></i><span>Encrypt</span></div>
+                            <div class="he-operation">
+                                <div class="he-item encrypted">29381044...</div>
+                                <div class="he-plus">+</div>
+                                <div class="he-item encrypted">78291038...</div>
+                                <div class="he-equals">=</div>
+                                <div class="he-item encrypted">10767208...</div>
+                            </div>
+                            <div class="he-note">Computation on encrypted data yields encrypted result</div>
+                            <div class="he-arrow"><i class="fas fa-long-arrow-alt-down"></i><span>Decrypt</span></div>
+                            <div class="he-operation">
+                                <div class="he-item result">68</div>
+                            </div>
+                            <div class="he-note">Final result matches the original operation</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-column">
+                    <h3>What is Homomorphic Encryption?</h3>
+                    <p>Homomorphic encryption is a form of encryption that allows computations to be performed on encrypted data without first decrypting it. The results of the computations, when decrypted, match the results of operations performed on the plaintext.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li><span class="highlight">Privacy Preservation</span>: Data remains encrypted during processing</li>
+                        <li><span class="highlight">Secure Computation</span>: Allows third parties to analyze data without seeing it</li>
+                        <li><span class="highlight">Data Utility</span>: Preserves the ability to work with sensitive information</li>
+                        <li><span class="highlight">Regulatory Compliance</span>: Helps meet stringent data protection requirements</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Combined Blockchain + HE Section -->
+        <section id="combined" class="content-section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-link-slash"></i></div>
+                <h2>Blockchain + Homomorphic Encryption</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="healthcare-illustration">
+                <div class="hospital-building">
+                    <div class="hospital-roof"></div>
+                    <div class="hospital-body">
+                        <div class="hospital-window"></div>
+                        <div class="hospital-window"></div>
+                        <div class="hospital-window"></div>
+                        <div class="hospital-door"></div>
+                        <div class="hospital-sign">
+                            <i class="fas fa-h-square"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="data-flow-container">
+                    <div class="data-flow">
+                        <div class="data-node hospital-node">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="data-path encrypt-path">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="data-node blockchain-node">
+                            <i class="fas fa-cubes"></i>
+                        </div>
+                        <div class="data-path compute-path">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="data-node result-node">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-columns">
+                <div class="text-column">
+                    <h3>Why Combine These Technologies?</h3>
+                    <p>The combination of blockchain and homomorphic encryption creates a powerful solution for healthcare data management. Blockchain provides the immutable record-keeping and transparency, while homomorphic encryption ensures privacy and compliance with healthcare regulations.</p>
+                    
+                    <div class="synergy-box">
+                        <h4>Addressing Each Other's Limitations</h4>
+                        <div class="synergy-item">
+                            <div class="synergy-icon"><i class="fas fa-eye-slash"></i></div>
+                            <div class="synergy-text">
+                                <h5>Blockchain's Transparency Issue</h5>
+                                <p>While blockchain makes all data visible to network participants, homomorphic encryption keeps the actual data hidden while still allowing computations.</p>
+                            </div>
+                        </div>
+                        <div class="synergy-item">
+                            <div class="synergy-icon"><i class="fas fa-database"></i></div>
+                            <div class="synergy-text">
+                                <h5>Encryption's Storage Problem</h5>
+                                <p>Encrypted data needs secure, immutable storage with verifiable access logs—exactly what blockchain provides.</p>
+                            </div>
+                        </div>
+                        <div class="synergy-item">
+                            <div class="synergy-icon"><i class="fas fa-hospital-user"></i></div>
+                            <div class="synergy-text">
+                                <h5>Multi-Hospital Collaboration</h5>
+                                <p>Hospitals can share encrypted data via blockchain and perform collective analysis without revealing sensitive patient information.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h3>Benefits for Healthcare</h3>
+                    <ul class="feature-list">
+                        <li><span class="highlight">Complete Privacy</span>: Patient data remains encrypted while still usable</li>
+                        <li><span class="highlight">Verifiable Integrity</span>: Blockchain ensures data hasn't been tampered with</li>
+                        <li><span class="highlight">Selective Disclosure</span>: Share only necessary information with specific parties</li>
+                        <li><span class="highlight">Auditability</span>: Track data access and usage without compromising privacy</li>
+                    </ul>
+                </div>
+                <div class="visual-column">
+                    <div class="encryption-visual">
+                        <div class="data-point original">
+                            <div class="data-label">Original Data</div>
+                            <div class="data-value">23</div>
+                        </div>
+                        <div class="encryption-process">
+                            <div class="arrow down"></div>
+                            <div class="process-box">Encrypt</div>
+                        </div>
+                        <div class="data-point encrypted">
+                            <div class="data-label">Encrypted Data</div>
+                            <div class="data-value">29381044398420381039</div>
+                        </div>
+                        <div class="encryption-process">
+                            <div class="arrow side"></div>
+                            <div class="process-box">Store on Blockchain</div>
+                        </div>
+                        <div class="data-point blockchain">
+                            <div class="data-label">Blockchain Storage</div>
+                            <div class="mini-blocks">
+                                <div class="mini-block">
+                                    <div class="mini-block-id">Block #156</div>
+                                    <div class="mini-block-data">29381044398420381039</div>
+                                </div>
+                                <div class="mini-block">
+                                    <div class="mini-block-id">Block #157</div>
+                                    <div class="mini-block-data">78291038471928374655</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="encryption-process">
+                            <div class="arrow down"></div>
+                            <div class="process-box">Homomorphic Addition</div>
+                        </div>
+                        <div class="data-point result-encrypted">
+                            <div class="data-label">Encrypted Result</div>
+                            <div class="data-value">107672082870348755694</div>
+                            <div class="data-explanation">(No decryption needed)</div>
+                        </div>
+                        <div class="encryption-process">
+                            <div class="arrow down"></div>
+                            <div class="process-box">Decrypt</div>
+                        </div>
+                        <div class="data-point result">
+                            <div class="data-label">Final Result</div>
+                            <div class="data-value">23 + 45 = 68</div>
+                            <div class="data-explanation">(Original values: 23, 45)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section id="applications" class="content-section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-heartbeat"></i></div>
+                <h2>Healthcare Applications</h2>
+                <div class="underline"></div>
+            </div>
+            
+            <div class="applications-grid">
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-user-shield"></i></div>
+                    <h3>Patient Data Privacy</h3>
+                    <p>Secure sharing of electronic health records (EHRs) between providers while maintaining HIPAA compliance and patient control over their data.</p>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-pills"></i></div>
+                    <h3>Drug Supply Chain</h3>
+                    <p>Immutable tracking of pharmaceuticals from manufacturer to patient to combat counterfeit medications and ensure safety.</p>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-dna"></i></div>
+                    <h3>Genomic Research</h3>
+                    <p>Analysis of encrypted genetic data across institutions without compromising patient identities or sensitive genetic information.</p>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Clinical Trials</h3>
+                    <p>Transparent record-keeping for trial protocols, patient consent, and results while maintaining participant privacy.</p>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                    <h3>Claims Processing</h3>
+                    <p>Automated verification and processing of insurance claims with reduced fraud risk and increased transparency.</p>
+                </div>
+                
+                <div class="app-card">
+                    <div class="app-icon"><i class="fas fa-laptop-medical"></i></div>
+                    <h3>Remote Monitoring</h3>
+                    <p>Secure collection and analysis of patient-generated health data from wearables and home devices while preserving privacy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Future Section -->
+        <section class="future-section">
+            <h2 class="terminal-text">The Future of Healthcare Security</h2>
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                        <span class="terminal-button"></span>
+                    </div>
+                    <div class="terminal-title">secure_health_protocol.sh</div>
+                </div>
+                <div class="terminal-content">
+                    <div class="line">$ <span class="command">initialize_secure_healthcare_system</span></div>
+                    <div class="line">Loading blockchain nodes... <span class="status">COMPLETE</span></div>
+                    <div class="line">Generating homomorphic keys... <span class="status">COMPLETE</span></div>
+                    <div class="line">Establishing secure data channels... <span class="status">COMPLETE</span></div>
+                    <div class="line">$ <span class="command">run_predictive_analysis</span></div>
+                    <div class="line">Processing encrypted patient data...</div>
+                    <div class="line">Computing results on encrypted data...</div>
+                    <div class="line">Verifying computation integrity...</div>
+                    <div class="line">Analysis complete without decryption. <span class="highlight">Privacy preserved.</span></div>
+                    <div class="cursor"></div>
+                </div>
+            </div>
+            <p class="conclusion">Together, blockchain and homomorphic encryption are revolutionizing healthcare data management, enabling unprecedented security, privacy, and interoperability while unlocking new possibilities for research and patient care.</p>
+        </section>
+
+        <!-- Footer -->
+        <footer class="cybr-footer">
+            <div class="footer-content">
+                <div class="logo">SECURE<span>HEALTH</span></div>
+                <p>Advancing healthcare through secure technology</p>
+                <div class="author-info">
+                    <h3>Author</h3>
+                    <p class="author-name">Bella Bao</p>
+                    <p class="author-affiliation">Yale University</p>
+                    <p class="author-affiliation">Mentor: Dr. Kuo, Tsung-Ting</p>
+                    <p class="author-title">Master Student in Health Informatics</p>
+                    <p class="author-research">Research topics: blockchain, decentralized systems, cryptography</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/bella-bao-521265202/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Bao. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for nav links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Blockchain animation
+            const blocks = document.querySelectorAll('.block');
+            
+            blocks.forEach(block => {
+                block.addEventListener('mouseenter', () => {
+                    block.classList.add('pulse');
+                });
+                
+                block.addEventListener('mouseleave', () => {
+                    block.classList.remove('pulse');
+                });
+            });
+            
+            // Dynamic blockchain generation
+            let blockCounter = 3;
+            const blockchainVisual = document.querySelector('.blockchain-visual');
+            
+            if (blockchainVisual) {
+                setInterval(() => {
+                    // Create chain link
+                    const chainLink = document.createElement('div');
+                    chainLink.classList.add('chain-link');
+                    
+                    // Create new block
+                    const newBlock = document.createElement('div');
+                    newBlock.classList.add('block');
+                    newBlock.setAttribute('data-block', ++blockCounter);
+                    
+                    // Create block header
+                    const blockHeader = document.createElement('div');
+                    blockHeader.classList.add('block-header');
+                    blockHeader.textContent = `BLOCK #${blockCounter}`;
+                    
+                    // Create block hash
+                    const blockHash = document.createElement('div');
+                    blockHash.classList.add('block-hash');
+                    blockHash.textContent = `0x${generateRandomHash()}`;
+                    
+                    // Chain grow animation
+                    const chainGrow = document.createElement('div');
+                    chainGrow.classList.add('chain-grow');
+                    
+                    // Hash calculation animation
+                    const hashCalc = document.createElement('div');
+                    hashCalc.classList.add('hash-calculation');
+                    hashCalc.textContent = `Calculating hash: 0x${generateRandomHash()}`;
+                    
+                    // Assemble block
+                    newBlock.appendChild(blockHeader);
+                    newBlock.appendChild(blockHash);
+                    newBlock.appendChild(chainGrow);
+                    newBlock.appendChild(hashCalc);
+                    
+                    // Add hover effect
+                    newBlock.addEventListener('mouseenter', () => {
+                        newBlock.classList.add('pulse');
+                    });
+                    newBlock.addEventListener('mouseleave', () => {
+                        newBlock.classList.remove('pulse');
+                    });
+                    
+                    // Remove oldest block if too many
+                    const existingBlocks = blockchainVisual.querySelectorAll('.block');
+                    const existingChains = blockchainVisual.querySelectorAll('.chain-link');
+                    
+                    if (existingBlocks.length >= 5) {
+                        blockchainVisual.removeChild(existingBlocks[0]);
+                        if (existingChains.length > 0) {
+                            blockchainVisual.removeChild(existingChains[0]);
+                        }
+                    }
+                    
+                    // Add to blockchain
+                    blockchainVisual.appendChild(chainLink);
+                    blockchainVisual.appendChild(newBlock);
+                    
+                }, 3000); // Generate a new block every 3 seconds
+            }
+            
+            // Helper function to generate random hash
+            function generateRandomHash() {
+                const chars = '0123456789abcdef';
+                let hash = '';
+                for (let i = 0; i < 5; i++) {
+                    hash += chars[Math.floor(Math.random() * chars.length)];
+                }
+                return hash;
+            }
+
+            // Create cyber grid background
+            const grid = document.querySelector('.cyber-grid');
+            for (let i = 0; i < 100; i++) {
+                const gridItem = document.createElement('div');
+                gridItem.classList.add('grid-item');
+                grid.appendChild(gridItem);
+            }
+        });
+    </script>
+</body>
+</html> 
